@@ -1,0 +1,50 @@
+<% layout("layouts/bolierplate") %>
+<body>
+    <div class="row mt-3">
+    <div class="col-8 offset-2">
+    <h3>Create a new Listing</h3>
+    <br><br>
+    <form method="POST" action="/listings" novalidate  class="needs-validation">
+    
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]" placeholder="Add a catchy title" id="title" class="form-control" required>
+            <div class="valid-feedback">Title looks good!</div> 
+        </div>
+        
+        
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" placeholder="enter description" id="description" class="form-control" required></textarea>
+            <div class="invalid-feedback">Description should be short!</div> 
+        </div>
+        
+       <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input type="text" name="listing[image]" placeholder="enter image URL/Link" id="image" class="form-control">
+       </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">price</label>
+                <input type="number" name="listing[price]" placeholder="enter price" id="price" class="form-control" required>
+                <div class="invalid-feedback">price should be valid!</div> 
+            </div>
+            
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="listing[country]" placeholder="enter country name" id="country" class="form-control" required>
+                <div class="invalid-feedback">Country name should be valid!</div> 
+            </div>
+        </div>
+        <div class="mb-3"> 
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="listing[location]" placeholder="enter location" id="location" class="form-control" required>
+            <div class="invalid-feedback">Location should be valid!</div> 
+        </div>
+
+        <button class="btn btn-dark add-btn mt-3">Add</button>
+    </form>
+    </div>
+    </div>
+</body>

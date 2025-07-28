@@ -1,0 +1,60 @@
+<% layout("layouts/bolierplate") %>
+
+<!-- Hero Section -->
+<section id="hero" class="text-white text-center d-flex align-items-center justify-content-center" style="height: 90vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/hero.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1 class="display-2 fw-bold mb-3 text-warning">Welcome to WanderLust</h1>
+    <p class="lead mb-4 fs-4">Explore the world, share your journey, and inspire others.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="/listings" class="btn btn-lg btn-light px-4 shadow-sm">🌍 Browse Listings</a>
+      <a href="/listings/new" class="btn btn-lg btn-warning text-dark px-4">➕ Add a Listing</a>
+      <!-- <% if (currentUser) { %> -->
+      <!-- <% } %> -->
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="container py-5">
+  <h2 class="text-center mb-5 fw-bold text-dark">What You Can Do</h2>
+  <div class="row g-5 text-center">
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-map-marked-alt fa-3x mb-3 text-primary"></i>
+          <h4 class="fw-semibold">Discover</h4>
+          <p class="text-muted">Uncover hidden gems and trending destinations shared by real travelers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-camera-retro fa-3x mb-3 text-success"></i>
+          <h4 class="fw-semibold">Share</h4>
+          <p class="text-muted">Upload your photos, travel tips, and stories to inspire the community.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-comments fa-3x mb-3 text-danger"></i>
+          <h4 class="fw-semibold">Connect</h4>
+          <p class="text-muted">Leave reviews, ask questions, and chat with fellow travel lovers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Parallax Visual Break -->
+<!-- <section class="py-0">
+  <div style="background: url('/images/feature-bg.jpg') center/cover fixed; height: 50vh; border-radius: 10px;"></div>
+</section> -->
+
+<!-- Call-to-action Section -->
+<section class="container py-5 text-center">
+  <h2 class="fw-bold mb-4 text-dark">Ready to start your adventure?</h2>
+  <a href="/signup" class="btn btn-success btn-lg px-5 py-3 shadow">Join WanderLust Today 🚀</a>
+</section>
